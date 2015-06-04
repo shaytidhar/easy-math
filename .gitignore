@@ -1,0 +1,7 @@
+.idea/
+easy-math-grailsPlugins.iml
+easy-math.iml
+*.iml
+target/
+out/
+tomcat.8080/
