@@ -9,5 +9,10 @@ class UrlMappings {
 
         "/"(view:"/index")
         "500"(view:'/error')
+
+        "/Books/$BookId?" (controller: 'Books', parseRequest: true){
+            action = [GET:"show", PUT:"update", DELETE:"delete", POST:"create"]
+        }
 	}
+
 }

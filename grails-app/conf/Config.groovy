@@ -87,11 +87,16 @@ grails.hibernate.osiv.readonly = false
 
 environments {
     development {
-        grails.logging.jul.usebridge = true
+
+        grails.config.locations = [ "file://${userHome}/.grails/${appName}-config.groovy" ]
+    }
+    test {
+
+        grails.config.locations = [ "file://${userHome}/.grails/${appName}-config.groovy" ]
     }
     production {
-        grails.logging.jul.usebridge = false
-        // TODO: grails.serverURL = "http://www.changeme.com"
+
+        grails.config.locations = [ "file://${userHome}/.grails/${appName}-config.groovy" ]
     }
 }
 
@@ -114,4 +119,8 @@ log4j.main = {
            'org.springframework',
            'org.hibernate',
            'net.sf.ehcache.hibernate'
+}
+
+grails.mongo.default.mapping = {
+    version true
 }
