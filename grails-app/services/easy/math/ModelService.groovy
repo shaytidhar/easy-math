@@ -12,6 +12,8 @@ class ModelService {
 
     private ObjectMapper objectMapper
 
+    def entitiesService
+
     @PostConstruct
     def init() {
 

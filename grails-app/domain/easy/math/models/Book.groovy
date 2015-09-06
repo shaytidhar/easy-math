@@ -24,6 +24,6 @@ class Book {
     String          publishing
     String          subject
 
-    static belongsTo = [ author : Author ]
-    static hasMany = [ exercises :Exercise]
+//    static belongsTo = [ author : Author ]
+//    static hasMany = [ exercises :Exercise]
 }
